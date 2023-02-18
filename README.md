@@ -1,2 +1,2 @@
-# python-projects
+# Basic Python
 ### Basic concepts of the Python language, in order to understand its logic
