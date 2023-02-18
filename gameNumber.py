@@ -1,21 +1,21 @@
 
 import random
-numero_Secreto = random.randint(1, 20)
-print('Estou pensando em um número entre 1 e 20.')
+secret_number = random.randint(1, 20)
+print("I'm thinking of a number between 1 - 20...")
 
 for palpites in range(0, 3):
-    print('Adivinhe :')
-    suposição = int(input())
+    print('Guess :')
+    sumpption = int(input())
 
-    if suposição < numero_Secreto:
-        print('Seu palpite é muito baixo')
-    elif suposição > numero_Secreto:
-        print('Seu palpite é muito alto.')
+    if sumpption < secret_number:
+        print('Your guess is too low')
+    elif sumpption > secret_number:
+        print('Your guess is too high.')
     else:
         break  
 
-if suposição == numero_Secreto:
-    print('Bom trabalho! Você adivinhou meu número em ' + str(palpites) +
-' adivinha!')
+if sumpption == secret_number:
+    print('Good job! You guessed my number on' + str(palpites) +
+' guess!')
 else:
-    print('Não. O número em que eu estava pensando era ' + str(numero_Secreto))
+    print('No. The number I was thinking of was ' + str(secret_number))

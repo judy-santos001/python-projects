@@ -1,15 +1,15 @@
 
 
 
-email = input("Digite seu email :")
-password = input("Digite sua senha :")
+email =  input("Type your e-mail :")
+password = input("Type your password :")
 
 if email == email:
-     print("Verificando dados..")
+     print("Checking data...")
 
 if password == password:
-        print('Acesso permitido  ')
+        print(' Allowed access  ')
 else:
-         print('Ops, acesso negado')
+         print('Oops, access denied :( )')
 
 

@@ -1,21 +1,21 @@
-def calculator(num_1, num_2, operação):
-  result = 0
+ride_type = "Black"
+credits = 4
 
-  if opera == "+":
-    result = num_1 + num_2
+ride_price = 0
+final_price = 0
 
-  elif opera == "-":
-    result = num_1 - num_2
+if ride_type == "DooberX":
+  ride_price = 20.5
+elif ride_type == "Black":
+  ride_price = 37.9
+else:
+  ride_price = 18.7
 
-  elif opera == "*":
-    result = num_1 * num_2
+print("Ride price:")
+print(ride_price)
 
-  elif opera =="/":
-    result = num_1 / num_2
+if credits > 0:
+  final_price = ride_price - credits
 
-  print(f"{num_1} {opera} {num_2} = {result}")
-  
-calculator(5, 5, "+")
-calculator(12, 4, "/")
-calculator(5, 10, "*")
-calculator(8, 3, "-")
+print("Final price:")
+print(final_price)
